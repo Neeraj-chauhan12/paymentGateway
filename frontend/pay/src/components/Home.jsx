@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from './Card'
-import pic4 from '../../public/p1.jpg'
-import pic1 from '../../public/p4.jpg'
-import pic2 from '../../public/p3.jpg'
-import pic3 from '../../public/p2.jpg'
+import pic4 from '../../public/s1.jpg'
+import pic1 from '../../public/s2.avif'
+import pic2 from '../../public/s3.jpg'
+import pic3 from '../../public/s4.jpg'
 import axios from 'axios'
 
 
@@ -49,7 +49,7 @@ const Home = () => {
     
 
   return (
-    <div className='flex gap-8 bg-black flex-wrap h-screen w-screen py-5 px-10'>
+    <div className='flex gap-8 bg-black flex-wrap justify-center items-center h-screen w-screen py-5 px-10'>
       <Card amount={5000} img={pic1} handleclick={handlep} />
       <Card amount={6000} img={pic2} handleclick={handlep}/>
       <Card amount={9000} img={pic3} handleclick={handlep}/>

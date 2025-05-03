@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 const  paymentroute  = require('./routes/paymentroute');
 const cors= require('cors');
+const connect=require('./databaseconnection/dbconnection')
 
 
 
@@ -11,6 +12,8 @@ const cors= require('cors');
 app.use(express.json());
 app.use(express.urlencoded({extended:true}))
 app.use(cors())
+
+connect();
 
 app.use("/api",paymentroute)
 app.get("/api/getkey",(req,res)=>{
